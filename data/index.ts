@@ -19,12 +19,7 @@ const data = {
   about: {
     description:
       "My name is Mohamed Hassan and I love building full-stack applications. In my free time, I enjoy exploring new technologies and keeping up with the latest trends in web development. Additionally, I like to contribute to open-source projects and share my knowledge through writing technical blogs.",
-    image: "/imgs/about-image.png",
-    numbers: [
-      { name: "PROJECTS-COMPLETED", number: 5 },
-      { name: "TOTAL-CONTRIBUTIONS", number: 160 },
-      { name: "CURRENT-YEAR-CONTRIBUTIONS", number: 130 },
-    ],
+    image: "/imgs/agakadela_mini.jpg",
   },
   projects: {
     description: "Projects that have recently been completed.",

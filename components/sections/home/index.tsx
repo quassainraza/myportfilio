@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Face from "./face";
+import Card from "./card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
@@ -75,12 +75,12 @@ export default function HomeSection() {
         initial="initial"
         animate="end"
         transition={{ duration: 1 }}
-        className="relative min-w-[350px] text-center text-9xl min-h-[150px]"
+        className="relative  text-center text-9xl min-h-[150px]"
       >
         {/* blur background colors behind */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-20 bg-gradient-primary opacity-50 size-[120px] rounded-full blur-3xl" />
 
-        <Face />
+        <Card />
       </motion.div>
 
       {/* Animated Mouse Icon */}

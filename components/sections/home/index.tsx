@@ -26,6 +26,7 @@ export default function HomeSection() {
         alt="grid image"
         width={0}
         height={0}
+        priority={true}
       />
 
       <div className="space-y-7 text-center md:text-left md:text-xl">

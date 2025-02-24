@@ -69,7 +69,7 @@ export default function InteractiveCard() {
                   alt="Profile"
                   width={96}
                   height={96}
-                  priority
+                  priority={true}
                   className="object-contain"
                 />
               </div>

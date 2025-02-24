@@ -4,7 +4,7 @@ const data = {
   home: {
     name: "Aga Kadela",
     description:
-      "I Fix, Optimize & Build High-Performance #Next_js & #React Apps —Powered by #AI", // # -> for css style, _ -> create space, __ -> creates dash
+      "I Fix, Optimize & Build #Next_js & #React Apps - Powered by #AI", // # -> for css style, _ -> create space, __ -> creates dash
     cvLink: "#contact",
   },
   sidebar: {

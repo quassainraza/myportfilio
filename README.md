@@ -31,7 +31,7 @@ A modern, interactive portfolio website built with Next.js, React, and TypeScrip
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/ai-portfolio.git
+   git clone https://github.com/agakadela/my-website.git
    cd ai-portfolio
    ```
 

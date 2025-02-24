@@ -88,7 +88,7 @@ export default function HomeSection() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer"
+        className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer"
         onClick={() => router.push("#about")}
       >
         <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex items-start justify-center p-1">

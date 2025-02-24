@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Github, Linkedin, Youtube } from "lucide-react";
 
 const data = {
   home: {
@@ -13,6 +13,16 @@ const data = {
         name: "github",
         link: "https://github.com/agakadela",
         icon: Github,
+      },
+      {
+        name: "linkedin",
+        link: "https://www.linkedin.com/in/agakadela/",
+        icon: Linkedin,
+      },
+      {
+        name: "youtube",
+        link: "https://www.youtube.com/@agakadela",
+        icon: Youtube,
       },
     ],
   },

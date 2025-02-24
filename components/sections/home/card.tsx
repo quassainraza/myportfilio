@@ -4,7 +4,8 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 
 export default function InteractiveCard() {
-  const [pos, setPos] = useState({ x: 50, y: 50 });
+  const [pos, setPos] = useState({ x: 85, y: 90 });
+  const [isInitialRender, setIsInitialRender] = useState(true);
   const [isHovering, setIsHovering] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -25,6 +26,7 @@ export default function InteractiveCard() {
     mouseX.set(event.clientX - rect.left - rect.width / 2);
     mouseY.set(event.clientY - rect.top - rect.height / 2);
 
+    setIsInitialRender(false);
     setPos({
       x: Math.floor((event.clientX / window.innerWidth) * 100),
       y: Math.floor((event.clientY / window.innerHeight) * 100),
@@ -37,10 +39,26 @@ export default function InteractiveCard() {
   }, []);
 
   const skills = [
-    { name: "Next.js", value: pos.x },
-    { name: "React", value: pos.y },
-    { name: "TypeScript", value: Math.floor((pos.x + pos.y) / 2) },
-    { name: "AI", value: Math.floor(Math.abs(pos.x - pos.y)) },
+    {
+      name: "Next.js",
+      value: isInitialRender ? 85 : Math.min(98, pos.x + 10),
+    },
+    {
+      name: "React",
+      value: isInitialRender ? 88 : Math.min(99, pos.y + 8),
+    },
+    {
+      name: "TypeScript",
+      value: isInitialRender
+        ? 82
+        : Math.min(96, Math.floor((pos.x + pos.y) / 1.8)),
+    },
+    {
+      name: "AI",
+      value: isInitialRender
+        ? 80
+        : Math.min(95, Math.floor(Math.abs(pos.x - pos.y) * 0.8 + 40)),
+    },
   ];
 
   return (

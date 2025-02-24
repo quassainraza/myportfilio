@@ -1,5 +1,7 @@
 "use client";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import animation from "@/public/lottie/laptop.json";
 
 export default function LaptopAnimation({ className }: { className?: string }) {

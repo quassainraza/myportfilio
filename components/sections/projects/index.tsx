@@ -33,7 +33,7 @@ export default function ProjectsSection() {
           </h1>
           <LaptopAnimation className="w-[300px] -scale-x-100 scale-y-100 mx-auto md:mx-0" />
           <p className="w-[400px] text-muted-foreground">
-            {data.projects.description}
+            Building, Fixing & Scaling Next.js & AI Apps That Actually Work
           </p>
         </div>
       </div>

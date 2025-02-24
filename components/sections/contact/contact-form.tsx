@@ -2,10 +2,19 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { z, ZodObject } from "zod";
+import { z } from "zod";
+import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -26,15 +35,37 @@ const defaultValues: z.infer<typeof formSchema> = {
 };
 
 export function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues,
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      setIsSubmitting(true);
+
+      const response = await fetch("/api/send", {
+        method: "POST",
+        body: JSON.stringify({
+          from_name: values.name,
+          from_email: values.email,
+          message: values.message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+
+      form.reset();
+      alert("Thank you for your message! I will get back to you soon.");
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Sorry, something went wrong. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -73,14 +104,18 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>_Message</FormLabel>
               <FormControl>
-                <Textarea placeholder="Let's Work Together!" className="resize-y max-h-44" {...field} />
+                <Textarea
+                  placeholder="Let's Work Together!"
+                  className="resize-y max-h-44"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button className="block ml-auto" type="submit">
-          Submit
+        <Button className="block ml-auto" type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Sending..." : "Submit"}
         </Button>
       </form>
     </Form>

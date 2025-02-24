@@ -11,7 +11,7 @@ type props = {
     title: string;
     description: string;
     image: string;
-    githubLink: string;
+    githubLink?: string;
     previewLink: string;
   };
 };
@@ -50,7 +50,7 @@ export default function ProjectCard({ project }: props) {
       </div>
       <div className="px-4 py-2 w-full">
         <h2 className="text-xl capitalize font-bold my-3">{project.title}</h2>
-        <p className="text-muted-foreground h-[150px] overflow-hidden">
+        <p className="text-muted-foreground h-[150px] overflow-hidden whitespace-pre-line">
           {project.description}
         </p>
         <div className="space-x-2 my-7">
@@ -59,11 +59,13 @@ export default function ProjectCard({ project }: props) {
               Live view
             </Link>
           </Button>
-          <Button asChild variant="ghost" className="bg-muted-foreground/10">
-            <Link href={project.githubLink} target="_blank">
-              Git Hub
-            </Link>
-          </Button>
+          {project.githubLink && (
+            <Button asChild variant="ghost" className="bg-muted-foreground/10">
+              <Link href={project.githubLink} target="_blank">
+                Git Hub
+              </Link>
+            </Button>
+          )}
         </div>
       </div>
     </div>

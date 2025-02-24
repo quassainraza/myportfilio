@@ -57,58 +57,41 @@ export default function AboutSection() {
             transition={{ delay: 0.7, ease: "easeIn", duration: 0.5 }}
             className="text-muted-foreground text-justify"
           >
-            Hey, I&apos;m Aga Kadela, a Next.js & React developer who helps
+            Hey, I’m Aga Kadela, a Next.js & React developer who helps
             businesses fix, optimize, scale, and build high-performance web
-            applications.
-            <br />
-            <br />
-            <span className="font-semibold">
-              If you&apos;re here, chances are you&apos;re dealing with:
-            </span>
-            <br />
-            ❌ A slow web app that frustrates users and affects conversions
-            <br />
-            ❌ Bugs and crashes that make your platform unreliable
-            <br />
-            ❌ Scaling issues that stop your app from handling more users
-            <br />
-            ❌ A missing AI-powered feature that could automate processes or
-            enhance user experience
-            <br />
-            ❌ A project that needs to be built from scratch the right
-            way—scalable, fast, and future-proof
-            <br />
-            That&apos;s where I step in.
+            applications. If your app is slow, buggy, struggling to scale, or
+            missing key AI-driven features—I can help.
             <br />
             <br />
             <span className="font-semibold">📌 What I Do Best:</span>
             <br />
             ✅ Fixing Bugs & Broken Code – Debugging, API issues, UI glitches
+            that frustrate users.
             <br />
-            ✅ Optimizing Performance – Speeding up apps, improving SEO & user
-            experience
+            ✅ Optimizing Performance – Speeding up apps, improving SEO, and
+            delivering a smooth experience.
             <br />
-            ✅ Scaling Web Apps – Ensuring they can handle growth without
-            breaking
+            ✅ Scaling Web Apps – Making sure your app grows without downtime or
+            technical limits.
             <br />
-            ✅ Building from Scratch – Custom Next.js applications built for
-            performance
+            ✅ Building from Scratch – Creating fast, scalable, and future-proof
+            Next.js applications.
             <br />
-            ✅ AI-Powered Features – Adding automation, chatbots, and smart
-            integrations
+            ✅ AI-Powered Features – Automating workflows, integrating chatbots,
+            and enhancing user engagement.
             <br />
             <br />
             <span className="font-semibold">📌 Why Work With Me?</span>
             <br />
-            🔹 I focus on real results, not just code. Your web app should work
-            smoothly, load fast, and scale effortlessly. I make sure it does.
+            🔹 I focus on real results, not just code. Your web app should run
+            fast, handle traffic, and grow without breaking—I make sure it does.
             <br />
             🔹 I work fast and efficiently. No endless back-and-forth, no
             unnecessary delays—just solutions that work.
             <br />
-            🔹 I don&apos;t just fix issues, I prevent them. Whether I&apos;m
-            optimizing an existing app or building a new one, I make sure
-            it&apos;s future-proof and scalable.
+            🔹 I don’t just fix problems—I prevent them. Whether optimizing an
+            existing app or building something new, I ensure it’s scalable,
+            maintainable, and built for the long run.
             <br />
             <br />
             <span className="font-semibold">📌 Let&apos;s Talk</span>

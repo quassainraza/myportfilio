@@ -16,59 +16,50 @@ const data = {
       },
     ],
   },
-  about: {
-    description:
-      "My name is Mohamed Hassan and I love building full-stack applications. In my free time, I enjoy exploring new technologies and keeping up with the latest trends in web development. Additionally, I like to contribute to open-source projects and share my knowledge through writing technical blogs.",
-    image: "/imgs/agakadela_mini.jpg",
-  },
+
   projects: {
-    description: "Projects that have recently been completed.",
     projects: [
       {
         id: 1,
-        title: "Social Media App",
+        title: "Coder Woman Platform",
         description:
-          "A platform that allows users to connect, share, and interact with others. It provides a space for posting updates and engaging with content from friends, family, and communities around the world.",
-        image: "/projects-imgs/social.png",
-        githubLink: "https://github.com/mo-hassann/social-app",
-        previewLink: "https://social-m-app.vercel.app",
+          "Platform to sell online courses, helping empower women in tech by making coding education accessible.\n\n Technologies Used: Next.js, React.js, CSS, Stripe API.",
+        image: "/projects-imgs/cw.png",
+        previewLink: "https://coderwoman.com",
       },
       {
         id: 2,
-        title: "Quran App",
+        title: "RetroCech Website",
         description:
-          "In this app you can view the Quran in different languages. You can also listen to the Quran with up to eight different readers. Additionally, you can search for chapters and verses by keyword and view the Quran's translation. Also you can track your reading time and set daily reading goals.",
-        image: "/projects-imgs/quran.png",
-        githubLink: "https://github.com/mo-hassann/nextjs-quran-app",
-        previewLink: "https://quraany-app.vercel.app",
+          "A professional and visually appealing website that captures the vintage style of the business while ensuring smooth performance and easy navigation. \n\n Technologies Used: Next.js, Tailwind CSS, React.js.",
+        image: "/projects-imgs/retrocech.png",
+        previewLink: "https://retrocech.com",
       },
       {
         id: 3,
-        title: "Notes Taker",
+        title: "E-commerce Platform",
         description:
-          "The Notes App is a versatile tool designed to help you quickly jot down thoughts, ideas, to-do lists, and important information. you can use it on smartphones, tablets, and computers, making it easy to sync notes across all your devices.",
-        image: "/projects-imgs/notes.png",
-        githubLink: "https://github.com/mo-hassann/simple-notes-app",
-        previewLink: "https://notes-app-s.vercel.app",
+          "Worked on one of a biggest e-commerce platform in Poland, as part of a Scrum team for 1.5 years, focusing on checkout and payment workflows. \n\n Technologies Used: Next.js, React.js, Tailwind CSS, Stripe API.",
+        image: "/projects-imgs/e-commerce.png",
+        previewLink: "https://x-kom.pl",
       },
       {
         id: 4,
-        title: "Developer Portfolio",
+        title: "Personal Portfolio Website",
         description:
-          "A developer portfolio is a website or digital platform that showcases a developer's skills, projects, and professional experience. It serves as a personal brand, highlighting the developer's expertise and work to potential employers, clients, or collaborators.",
-        image: "/projects-imgs/portfolio.png",
-        githubLink: "https://github.com/mo-hassann/my-portfolio",
-        previewLink: "https://mohamed-hassan.vercel.app",
+          "A reliable and polished website that makes it easy for the expert to share their skills and impress potential clients or employers. \n\n Technologies Used: Next.js, React.js, CSS.",
+        image: "/projects-imgs/lukaskadela.png",
+        previewLink: "https://lukaskadela.com",
       },
-      {
-        id: 5,
-        title: "Trello Clone",
-        description:
-          "Clone of the Trello App which is a popular project management tool designed to help individuals and teams organize tasks and collaborate efficiently. It uses boards, lists, and cards to visually represent projects and tasks, making it easy to track progress and prioritize work.",
-        image: "/projects-imgs/trello.png",
-        githubLink: "https://github.com/mo-hassann/trello-app",
-        previewLink: "https://trello-app-v1.vercel.app",
-      },
+      // {
+      //   id: 5,
+      //   title: "Trello Clone",
+      //   description:
+      //     "Clone of the Trello App which is a popular project management tool designed to help individuals and teams organize tasks and collaborate efficiently. It uses boards, lists, and cards to visually represent projects and tasks, making it easy to track progress and prioritize work.",
+      //   image: "/projects-imgs/trello.png",
+      //   githubLink: "https://github.com/mo-hassann/trello-app",
+      //   previewLink: "https://trello-app-v1.vercel.app",
+      // },
     ],
   },
   technologies: {
@@ -166,7 +157,7 @@ const data = {
     ],
   },
   contact: {
-    email: "mohamed.hassan.bu@gmail.com",
+    email: "aga.kadela.dev@gmail.com",
   },
 };
 

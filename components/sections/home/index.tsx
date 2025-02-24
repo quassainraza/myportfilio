@@ -1,13 +1,12 @@
 "use client";
 import Image from "next/image";
-import Card from "./card";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
-import useCurSection from "@/hooks/use-cur-section";
 import { useRef } from "react";
 import data from "@/data";
 import Link from "next/link";
+import CodeTyping from "./code-typing";
 
 export default function HomeSection() {
   const router = useRouter();
@@ -17,7 +16,7 @@ export default function HomeSection() {
     <section
       id="home"
       ref={ref}
-      className="relative min-h-full flex flex-col lg:flex-row gap-28 p-6 items-center justify-center overflow-hidden container text-center md:text-left"
+      className="relative min-h-full flex flex-col xl:flex-row gap-12 p-6 items-center justify-center overflow-hidden container text-center md:text-left"
     >
       {/* grid image behind */}
       <Image
@@ -29,11 +28,10 @@ export default function HomeSection() {
         priority={true}
       />
 
-      <div className="space-y-7 text-center md:text-left md:text-xl">
+      <div className="space-y-7 text-center xl:text-left xl:text-xl">
         <div className="-space-y-1">
           <p>Hello 👋, I&apos;m</p>
-          <h1 className="relative text-6xl md:text-8xl !leading-[1.4]">
-            {/* blur background colors behind */}
+          <h1 className="relative text-6xl xl:text-8xl !leading-[1.4]">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-20 bg-gradient-primary opacity-50 w-full h-10 blur-3xl line-" />
             <TextAnimation>{data.home.name}</TextAnimation>
           </h1>
@@ -68,28 +66,25 @@ export default function HomeSection() {
           )}
         </div>
       </div>
+
       <motion.div
         variants={{
           initial: { opacity: 0, scale: 0, y: "-20%" },
-          end: { opacity: 1, scale: 1, y: ["70%", 0] },
+          end: { opacity: 1, scale: 1, y: 0 },
         }}
         initial="initial"
         animate="end"
         transition={{ duration: 1 }}
-        className="relative  text-center text-9xl min-h-[150px]"
+        className="relative w-full max-w-2xl"
       >
-        {/* blur background colors behind */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-20 bg-gradient-primary opacity-50 size-[120px] rounded-full blur-3xl" />
-
-        <Card />
+        <CodeTyping />
       </motion.div>
 
-      {/* Animated Mouse Icon */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1 }}
-        className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer"
+        className="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2 cursor-pointer"
         onClick={() => router.push("#about")}
       >
         <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex items-start justify-center p-1">

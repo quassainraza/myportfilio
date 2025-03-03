@@ -1,28 +1,22 @@
-import { Github, Linkedin, Youtube } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 const data = {
   home: {
-    name: "Aga Kadela",
-    description:
-      "I Fix, Optimize & Build #Next_js & #React Apps - Powered by #AI", // # -> for css style, _ -> create space, __ -> creates dash
+    name: "Quassain Raza",
+    description: "I'm a Software Engineer for Mobile and Web. ", // # -> for css style, _ -> create space, __ -> creates dash
     cvLink: "#contact",
   },
   sidebar: {
     links: [
       {
         name: "github",
-        link: "https://github.com/agakadela",
+        link: "https://github.com/quassainraza",
         icon: Github,
       },
       {
         name: "linkedin",
-        link: "https://www.linkedin.com/in/agakadela/",
+        link: "https://www.linkedin.com/in/quassain-raza/",
         icon: Linkedin,
-      },
-      {
-        name: "youtube",
-        link: "https://www.youtube.com/@agakadela",
-        icon: Youtube,
       },
     ],
   },
@@ -61,15 +55,6 @@ const data = {
         image: "/projects-imgs/lukaskadela.png",
         previewLink: "https://lukaskadela.com",
       },
-      // {
-      //   id: 5,
-      //   title: "Trello Clone",
-      //   description:
-      //     "Clone of the Trello App which is a popular project management tool designed to help individuals and teams organize tasks and collaborate efficiently. It uses boards, lists, and cards to visually represent projects and tasks, making it easy to track progress and prioritize work.",
-      //   image: "/projects-imgs/trello.png",
-      //   githubLink: "https://github.com/mo-hassann/trello-app",
-      //   previewLink: "https://trello-app-v1.vercel.app",
-      // },
     ],
   },
   technologies: {
@@ -167,7 +152,7 @@ const data = {
     ],
   },
   contact: {
-    email: "aga.kadela.dev@gmail.com",
+    email: "quassainraza84@gmail.com",
   },
 };
 

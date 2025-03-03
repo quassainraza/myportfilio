@@ -1,9 +1,9 @@
 "use client";
 import useCurSection from "@/hooks/use-cur-section";
 import Image from "next/image";
-import { Fragment, useRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
-import agakadela from "@/public/imgs/agakadela_mini.jpg";
+import quassain from "@/public/imgs/mypic.jpeg";
 
 export default function AboutSection() {
   const ref = useRef(null);
@@ -39,7 +39,7 @@ export default function AboutSection() {
               width={600}
               height={600}
               alt="about profile image"
-              src={agakadela}
+              src={quassain}
             />
           </motion.div>
         </div>
@@ -57,34 +57,36 @@ export default function AboutSection() {
             transition={{ delay: 0.7, ease: "easeIn", duration: 0.5 }}
             className="text-muted-foreground text-justify"
           >
-            Hey, I’m Aga Kadela, a Next.js & React developer who helps
-            businesses fix, optimize, scale, and build high-performance web
-            applications. If your app is slow, buggy, struggling to scale, or
-            missing key AI-driven features—I can help.
+            "Hey, I’m Quassain, a software developer with 3.5 years of
+            experience in React Native and Flutter. I specialize in building and
+            optimizing high-performance mobile apps. Currently exploring AI and
+            web development, I’m always pushing the boundaries to create
+            cutting-edge solutions." Let me know if you want any refinements! 🚀
             <br />
             <br />
             <span className="font-semibold">📌 What I Do Best:</span>
             <br />
-            ✅ Fixing Bugs & Broken Code – Debugging, API issues, UI glitches
-            that frustrate users.
+            ✅ Debugging & Fixing Issues – Resolving API errors, UI glitches,
+            crashes, and performance bottlenecks.
             <br />
-            ✅ Optimizing Performance – Speeding up apps, improving SEO, and
-            delivering a smooth experience.
+            ✅ Performance Optimization – Enhancing speed, responsiveness, and
+            overall user experience for mobile and web apps.
             <br />
-            ✅ Scaling Web Apps – Making sure your app grows without downtime or
-            technical limits.
+            ✅ Scalable Development – Ensuring apps grow seamlessly without
+            downtime or technical limitations.
             <br />
-            ✅ Building from Scratch – Creating fast, scalable, and future-proof
-            Next.js applications.
+            ✅ Full-Cycle Development – Building robust, scalable applications
+            with React Native, Flutter, and modern web technologies.
             <br />
-            ✅ AI-Powered Features – Automating workflows, integrating chatbots,
-            and enhancing user engagement.
+            ✅ AI & Automation – Exploring AI-driven features, chatbots, and
+            workflow automation to enhance functionality and engagement.
             <br />
             <br />
             <span className="font-semibold">📌 Why Work With Me?</span>
             <br />
-            🔹 I focus on real results, not just code. Your web app should run
-            fast, handle traffic, and grow without breaking—I make sure it does.
+            🔹 I focus on real results, not just code. Your web/mobile app
+            should run fast, handle traffic, and grow without breaking—I make
+            sure it does.
             <br />
             🔹 I work fast and efficiently. No endless back-and-forth, no
             unnecessary delays—just solutions that work.
